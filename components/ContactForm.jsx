@@ -8,12 +8,42 @@ const ContactForm = () => {
         phoneNumber: '',
     });
 
+    const [formErrors, setFormErrors] = useState({
+        name: '',
+        email: '',
+        phoneNumber: '',
+    });
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
             ...formData,
             [name]: value,
         });
+        setFormErrors({
+            ...formErrors,
+            [name]: '',
+        });
+    };
+
+    const validateEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    };
+
+    const handleBlur = (e) => {
+        const { name, value } = e.target;
+        if (value.trim() === '') {
+            setFormErrors({
+                ...formErrors,
+                [name]: 'This field is required',
+            });
+        } else if (name === 'email' && !validateEmail(value)) {
+            setFormErrors({
+                ...formErrors,
+                [name]: 'Invalid email address',
+            });
+        }
     };
 
     const handleSubmit = (e) => {
@@ -31,8 +61,10 @@ const ContactForm = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
+                    onBlur={handleBlur}
                     required
                 />
+                <div className="error-message">{formErrors.name}</div>
             </div>
 
             <div className="form-group">
@@ -43,8 +75,10 @@ const ContactForm = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
+                    onBlur={handleBlur}
                     required
                 />
+                <div className="error-message">{formErrors.email}</div>
             </div>
 
             <div className="form-group">
@@ -56,6 +90,7 @@ const ContactForm = () => {
                     value={formData.phoneNumber}
                     onChange={handleChange}
                 />
+                <div className="error-message">{formErrors.phoneNumber}</div>
             </div>
 
             <button type="submit">Submit</button>
