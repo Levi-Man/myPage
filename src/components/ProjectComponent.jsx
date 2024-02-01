@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProjectComponent.css';
+import './style/ProjectComponent.css';
 
 const ProjectComponent = ({ title, imageSrc, link }) => {
   return (

@@ -1,4 +1,4 @@
-import '../About.css';
+import '../components/style/About.css';
 
 export default function About() {
   return (
@@ -29,7 +29,7 @@ export default function About() {
 <br></br> Oh, and did I mention I chaired the U.P. Architecture Forum and headed the Externals Committee? College life was a mix of creative chaos and student leadership!<br></br>
 <span>That's a bit about me—always up for a chat or collaboration. Let's connect and share stories!</span>
 </p>
-<img id="self-portrait" src="../assets/self.jpg" alt="Photo of Indra holding a glowing egg"></img>
+<img id="self-portrait" src="/self.jpg" alt="Photo of Indra holding a glowing egg"></img>
      
     </div>
   );

@@ -4,13 +4,16 @@
   text-align: justify;
 }
 
-.app-wrapper {
+/* .app-wrapper {
   max-width: 1200px; /* Adjust the value based on your design */
-  margin: 0 auto; /* Center the content horizontally */
-}
+  /* margin: 0 auto;  Center the content horizontally 
+} */
 
 /* Other styles for your main content */
 
+.main-container {
+
+}
 
 .logo {
   height: 6em;
