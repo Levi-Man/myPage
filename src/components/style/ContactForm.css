@@ -1,16 +1,19 @@
 .contact-form {
-  /* display: flex;
-  flex-direction: column; */
-  width: 600px
-  justify-content: left;
+  display: flex;
+  flex-direction: column;
   align-items: left;
+  width: 600px;
   max-width: 100%;
   /* margin: auto; */
 }
 
 .form-group {
   margin-bottom: 15px;
-  width: 600px
+
+}
+
+.message {
+  width: 600px;
 }
 
 label {
@@ -18,5 +21,5 @@ label {
 }
 
 input {
-  width: 100%;  /* Ensure input fields take full width */
+  width: 100%; 
 }

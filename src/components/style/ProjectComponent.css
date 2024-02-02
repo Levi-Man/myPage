@@ -7,8 +7,8 @@
   .project-image {
     width: 100%; 
     height: auto; 
-    max-height: 100%; 
-    border: 1px solid #ddd; 
+    max-height: 200px; 
+    border: 10px solid #0F8B8D; 
     border-radius: 8px; 
   }
   

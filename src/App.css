@@ -1,23 +1,50 @@
 #root {
-  margin: 0 auto;
-  padding: 2rem;
+  margin-top: 200px;
+  padding: 0;
   text-align: justify;
+  background-color: #DAD2D8;
 }
 
-/* .app-wrapper {
-  max-width: 1200px; /* Adjust the value based on your design */
-  /* margin: 0 auto;  Center the content horizontally 
-} */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  font-weight:bolder;
+  padding: 2rem 2rem 0 2rem;
+  background-color: #EC9A29;
+  width: 100%;
+  border: 5px solid black;
+  border-color: #EC9A29;
+  position: fixed;
+  top: 0;
 
-/* Other styles for your main content */
+  /* border-bottom: 20px ;
+  border-bottom-color: #A8201A; */
+}
+
+.name-and-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%
+}
 
 .main-container {
+height: 100vh;
+background-color: #DAD2D8;
+padding: 1.5% 5% 0 5%;;
+margin-top: 1rem;
+}
 
+.name{
+  font-size: 4em;
 }
 
 .logo {
   height: 6em;
-  padding: 1.5em;
+  padding: 0;
+  margin-right: 2rem;
   will-change: filter;
   transition: filter 300ms;
 }

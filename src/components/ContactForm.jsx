@@ -5,13 +5,13 @@ const ContactForm = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        phoneNumber: '',
+        Message: '',
     });
 
     const [formErrors, setFormErrors] = useState({
         name: '',
         email: '',
-        phoneNumber: '',
+        Message: '',
     });
 
     const handleChange = (e) => {
@@ -82,15 +82,17 @@ const ContactForm = () => {
             </div>
 
             <div className="form-group">
-                <label htmlFor="phoneNumber">Phone Number:</label>
-                <input
-                    type="tel"
-                    id="phoneNumber"
-                    name="phoneNumber"
-                    value={formData.phoneNumber}
+                <label htmlFor="message">Message:</label>
+                <br></br>
+                <textarea
+                    type="text"
+                    className="message"
+                    name="message"
+                    value={formData.message}
                     onChange={handleChange}
+                    rows="6"
                 />
-                <div className="error-message">{formErrors.phoneNumber}</div>
+                <div className="error-message">{formErrors.message}</div>
             </div>
 
             <button type="submit">Submit</button>

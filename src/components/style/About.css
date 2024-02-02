@@ -1,7 +1,41 @@
 p {
-    text-align: left;
-  }
+  text-align: left;
+}
 
-  p span {
-    font-weight: bold;
+p span {
+  font-weight: bold;
+}
+
+.about-container {
+  /* margin-top: 3rem; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.about-me {
+  width: 40%;
+}
+
+.image{
+  width:50%;
+}
+
+#self-portrait{
+  width:100%;
+}
+
+@media screen and (max-width: 650px) {
+  .about-container {
+    display: block
+    
   }
+  .about-me {
+    width: 100%;
+  }
+  
+  .image{
+    width:100%;
+  }
+}

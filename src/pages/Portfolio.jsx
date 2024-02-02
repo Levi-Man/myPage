@@ -2,12 +2,12 @@ import React from 'react';
 import ProjectComponent from '../components/ProjectComponent';
 import '../components/style/Portfolio.css'
 
-import project1Image from '../../public/Wonderwall.png'; 
-import project2Image from '../../public/JATE.png';
-import project3Image from '../../public/passwordGenerator.png';
-import project4Image from '../../public/employeeManager.png';
-import project5Image from '../../public/camelDailyOrganizer.png';
-import project6Image from '../../public/scheduler.png';
+import project1Image from '/Wonderwall.png'; 
+import project2Image from '/JATE.png';
+import project3Image from '/passwordGenerator.png';
+import project4Image from '/employeeManager.png';
+import project5Image from '/camelDailyOrganizer.png';
+import project6Image from '/scheduler.png';
 
 const Portfolio = () => {
   return (
