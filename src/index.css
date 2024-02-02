@@ -31,6 +31,7 @@ body {
   min-width: 100vh;
   min-height: 100vh;
   background-color: #DAD2D8;
+  background-size: cover;
 }
 
 h1 {
