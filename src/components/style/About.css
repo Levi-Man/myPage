@@ -1,5 +1,6 @@
 p {
   text-align: left;
+  margin-bottom: 4rem;
 }
 
 p span {
@@ -11,6 +12,7 @@ p span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 5%;
   
 }
 
