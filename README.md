@@ -23,7 +23,7 @@ This is my portfolio built with React.
 [Links](#links)
 
 ## Installation
-Click the link. 
+Click the [link](https://indralevi.netlify.app/).
 
 ## Usage
 User can navigate through the different sections using the nav bar on the top. 
@@ -58,6 +58,6 @@ Contact Me
 
 ## Links
 
-Deployed site: 
+Deployed site: https://indralevi.netlify.app/
 
-GitHub Repo: 
+GitHub Repo: https://github.com/Levi-Man/myPage 
